@@ -258,35 +258,43 @@
 
             <div class="row text-center">
 
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="stat-box">
-                        <h2>150+</h2>
-                        <p>Projects Completed</p>
-                    </div>
-                </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="stat-box">
+            <h2>
+                <span class="count-effect" data-target="150">0</span>+
+            </h2>
+            <p>Projects Completed</p>
+        </div>
+    </div>
 
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="stat-box">
-                        <h2>100+</h2>
-                        <p>Happy Clients</p>
-                    </div>
-                </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="stat-box">
+            <h2>
+                <span class="count-effect" data-target="100">0</span>+
+            </h2>
+            <p>Happy Clients</p>
+        </div>
+    </div>
 
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="stat-box">
-                        <h2>24/7</h2>
-                        <p>Support Available</p>
-                    </div>
-                </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="stat-box">
+            <h2>
+                <span class="count-effect" data-target="24">0</span>/7
+            </h2>
+            <p>Support Available</p>
+        </div>
+    </div>
 
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="stat-box">
-                        <h2>5★</h2>
-                        <p>Client Satisfaction</p>
-                    </div>
-                </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+        <div class="stat-box">
+            <h2>
+                <span class="count-effect" data-target="5">0</span>★
+            </h2>
+            <p>Client Satisfaction</p>
+        </div>
+    </div>
 
-            </div>
+</div>
 
         </div>
 
@@ -422,42 +430,126 @@
                     </p>
 
                     <div class="mt-4">
-                        <p><i class="bi bi-envelope-fill text-primary"></i> support@avruptechnologies.vercel.app</p>
-                        <p><i class="bi bi-telephone-fill text-primary"></i> +91 9461743301</p>
-                        <p><i class="bi bi-geo-alt-fill text-primary"></i> Rajasthan, India</p>
+                        <a href="support@avruptechnologies.vercel.app" style="text-decoration: none;" class="text-secondary"><i class="bi bi-envelope-fill text-primary"></i> support@avruptechnologies.vercel.app</a><br><br>
+                        <a href="+91 9461743301" style="text-decoration: none;" class="text-secondary"><i class="bi bi-telephone-fill text-primary"></i> +91 9461743301</a><br><br>
+                        <p class="text-secondary"><i class="bi bi-geo-alt-fill text-primary"></i> Rajasthan, India</p>
                     </div>
 
                 </div>
 
                 <div class="col-lg-7 mt-5 mt-lg-0" data-aos="fade-left">
 
-                    <form>
+                    <form action="https://formsubmit.co/avruptechnologies@gmail.com" 
+      method="POST"
+      autocomplete="off"
+      class="contact-form-modern">
 
-                        <div class="row">
+    <!-- Security Hidden Fields -->
+    <input type="hidden" name="_captcha" value="false">
 
-                            <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" placeholder="Full Name">
-                            </div>
+    <input type="hidden" name="_subject" 
+           value="New Inquiry - Avrup Technologies">
 
-                            <div class="col-md-6 mb-3">
-                                <input type="email" class="form-control" placeholder="Email Address">
-                            </div>
+    <input type="hidden" name="_template" value="table">
 
-                        </div>
+    <div class="row">
 
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Subject">
-                        </div>
+        <div class="col-md-6 mb-4">
 
-                        <div class="mb-4">
-                            <textarea rows="5" class="form-control" placeholder="Your Message"></textarea>
-                        </div>
+            <div class="input-group-modern">
 
-                        <button class="btn btn-main">
-                            Send Message
-                        </button>
+                <span class="input-icon">
+                    <i class="bi bi-person-fill"></i>
+                </span>
 
-                    </form>
+                <input type="text"
+                       name="name"
+                       class="form-control"
+                       placeholder="Full Name"
+                       required
+                       minlength="3"
+                       maxlength="50">
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6 mb-4">
+
+            <div class="input-group-modern">
+
+                <span class="input-icon">
+                    <i class="bi bi-envelope-fill"></i>
+                </span>
+
+                <input type="email"
+                       name="email"
+                       class="form-control"
+                       placeholder="Email Address"
+                       required
+                       maxlength="100">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="mb-4">
+
+        <div class="input-group-modern">
+
+            <span class="input-icon">
+                <i class="bi bi-chat-left-text-fill"></i>
+            </span>
+
+            <input type="text"
+                   name="subject"
+                   class="form-control"
+                   placeholder="Subject"
+                   required
+                   maxlength="100">
+
+        </div>
+
+    </div>
+
+    <div class="mb-4">
+
+        <div class="input-group-modern textarea-group">
+
+            <span class="input-icon textarea-icon">
+                <i class="bi bi-pencil-square"></i>
+            </span>
+
+            <textarea rows="6"
+                      name="message"
+                      class="form-control"
+                      placeholder="Write your message here..."
+                      required
+                      minlength="10"
+                      maxlength="1000"></textarea>
+
+        </div>
+
+    </div>
+
+    <button type="submit" class="btn btn-main submit-btn">
+
+        <span>Send Message</span>
+
+        <i class="bi bi-send-fill ms-2"></i>
+
+    </button>
+
+    <!-- Success Message -->
+
+<div id="successMessage" class="success-message">
+    <i class="bi bi-check-circle-fill"></i>
+    Message Sent Successfully!
+</div>
+
+</form>
 
                 </div>
 
@@ -572,6 +664,102 @@
             behavior: "smooth"
         });
     }
+</script>
+
+<script>
+
+const form = document.querySelector(".contact-form-modern");
+const successMessage = document.getElementById("successMessage");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    fetch(form.action,{
+        method:"POST",
+        body:new FormData(form)
+    })
+    .then(response => {
+
+        successMessage.style.display = "block";
+
+        form.reset();
+
+        setTimeout(()=>{
+            successMessage.style.display = "none";
+        },5000);
+
+    })
+    .catch(error => {
+        alert("Something went wrong!");
+    });
+
+});
+
+</script>
+
+<script>
+
+const counters = document.querySelectorAll('.count-effect');
+
+function animateCounter(counter){
+
+    const target = +counter.getAttribute('data-target');
+
+    let count = 0;
+
+    const updateCounter = () => {
+
+        const increment = Math.ceil((target - count) / 20);
+
+        count += increment;
+
+        if(count >= target){
+
+            count = target;
+
+            counter.classList.add('counter-finished');
+
+        } else {
+
+            requestAnimationFrame(updateCounter);
+
+        }
+
+        counter.innerText = count;
+
+    };
+
+    updateCounter();
+
+}
+
+
+
+// Run only when stats section appears
+
+const statsSection = document.querySelector('.stats-section');
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            counters.forEach(counter => {
+                animateCounter(counter);
+            });
+
+            observer.unobserve(statsSection);
+
+        }
+
+    });
+
+}, { threshold: 0.5 });
+
+observer.observe(statsSection);
+
 </script>
 
 <script>
