@@ -1850,7 +1850,7 @@ section{
 .process-number{
     position:absolute;
     top:0px;
-    right:-80px;
+    right:20px;
     color:rgba(255,255,255,0.08);
     font-size:3rem;
     font-weight:500;
@@ -2616,7 +2616,7 @@ section{
 
 .services-hero-light{
 
-    padding:30px;
+    padding:0px;
 
     min-height:100vh;
 
@@ -2628,6 +2628,13 @@ section{
     );
 
     position:relative;
+}
+
+@media(max-width:991px){
+
+    .services-hero-light{
+        padding: 30px;
+    }
 }
 
 /* BLUR */
@@ -4455,6 +4462,8 @@ section{
         height:70px;
         min-width:70px;
         font-size:22px;
+        left: -10px;
+        top: 10px;
     }
 
 }
