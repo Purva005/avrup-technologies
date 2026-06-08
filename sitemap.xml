@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+  <loc>https://avruptechnologies.com/</loc>
+  <priority>1.0</priority>
+</url>
+
+<url>
+  <loc>https://avruptechnologies.com/about-us.html</loc>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://avruptechnologies.com/our-team.html</loc>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://avruptechnologies.com/our-process.html</loc>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://avruptechnologies.com/portfolio.html</loc>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://avruptechnologies.com/services.html</loc>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://avruptechnologies.com/contact.html</loc>
+  <priority>0.8</priority>
+</url>
+
+</urlset>
