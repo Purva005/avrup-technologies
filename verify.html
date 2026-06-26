@@ -98,7 +98,7 @@
                                     type="text"
                                     id="certificateId"
                                     class="form-control form-control-lg"
-                                    placeholder="Example : AVT-INT-2026-001">
+                                    placeholder="Please Write Certificate ID">
 
                             </div>
 
@@ -192,7 +192,7 @@
 
                             <img
                                 id="verifyImage"
-                                src="images/certificate-verification.svg"
+                                src="verify.jpg"
                                 class="img-fluid verify-image"
                                 alt="Certificate Verification">
 
@@ -204,7 +204,7 @@
                             id="rightTitle"
                             class="fw-bold text-center mb-3">
 
-                            Certificate Verified
+                            Certificate Verified Successfully
 
                         </h3>
 
@@ -619,7 +619,7 @@ navLinks.forEach((link) => {
 
 const certificates = {
 
-    "AVT-INT-2026-001": {
+    "AVT-INT-RK-101125": {
 
         name: "Rajeev Kharadi",
 
@@ -629,7 +629,11 @@ const certificates = {
 
         issued: "10 Apr 2026",
 
-        status: "Verified"
+        status: "Verified",
+
+        reference: "AVT/DMI/2025",
+
+        mode: "Remote"
 
     },
 
@@ -722,19 +726,19 @@ function showVerified(id) {
 
     document.getElementById("verifyImage").src =
 
-        "images/certificate-verification.svg";
+        "verify.jpg";
 
 
 
     document.getElementById("rightTitle").innerHTML =
 
-        "Certificate Verified";
+        "Certificate is Verified";
 
 
 
     document.getElementById("rightTitle").className =
 
-        "fw-bold text-success text-center mb-3";
+        "fw-medium text-success text-center mb-3";
 
 
 
@@ -764,7 +768,7 @@ function showVerified(id) {
 
 <h3 class="result-title success">
 
-Certificate Verified
+Verified
 
 </h3>
 
@@ -789,6 +793,15 @@ This certificate is authentic.
 </div>
 
 
+<div class="detail-item">
+
+<span>Reference No</span>
+
+<strong>${c.reference}</strong>
+
+</div>
+
+
 
 <div class="detail-item">
 
@@ -797,6 +810,7 @@ This certificate is authentic.
 <strong>${c.name}</strong>
 
 </div>
+
 
 
 
@@ -815,6 +829,15 @@ This certificate is authentic.
 <span>Duration</span>
 
 <strong>${c.duration}</strong>
+
+</div>
+
+
+<div class="detail-item">
+
+<span>Internship Mode</span>
+
+<strong>${c.mode}</strong>
 
 </div>
 
