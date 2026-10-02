@@ -629,7 +629,7 @@ section{
 
 @media (max-width: 575.98px) {
     .btn-main, .btn-outline-custom { width: 100%; }
-    .team-zigzag-img { width: 100%; height: 300px; }
+    .team-zigzag-img { width: 100%; height: 450px; }
 }
 
 /* --- High-Fidelity Design Portfolio Component Styles --- */
@@ -5988,5 +5988,514 @@ font-size:13px;
 font-size:11px;
 
 }
+
+}
+
+
+/* =========================================================
+   TEAM PAGE - ADDITIONAL STYLING
+   ========================================================= */
+
+
+/* ---------- Team Section Background ---------- */
+
+.team-zigzag-section {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 5% 8%,
+            rgba(91, 126, 239, 0.12) 0 90px,
+            transparent 91px
+        ),
+        radial-gradient(
+            circle at 98% 18%,
+            rgba(124, 58, 237, 0.10) 0 70px,
+            transparent 71px
+        ),
+        linear-gradient(
+            180deg,
+            #f8fbff 0%,
+            #f3f8ff 100%
+        );
+}
+
+
+/* ---------- Decorative Background Shapes ---------- */
+
+.team-zigzag-section::before {
+    content: "";
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    left: -105px;
+    top: -65px;
+
+    border: 48px solid rgba(87, 119, 239, 0.12);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+.team-zigzag-section::after {
+    content: "";
+    position: absolute;
+
+    width: 140px;
+    height: 140px;
+
+    right: -70px;
+    top: 75px;
+
+    background: rgba(117, 151, 255, 0.10);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   INTRO TEXT
+   ========================================================= */
+
+.team-intro-copy {
+    max-width: 650px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #71809d;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* Small decorative line below intro */
+
+.team-intro-divider {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 18px;
+}
+
+
+.team-intro-divider span {
+    display: block;
+
+    width: 32px;
+    height: 3px;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8b5cf6,
+            #2563eb
+        );
+}
+
+
+.team-intro-divider i {
+    display: block;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #7657e8;
+}
+
+
+/* =========================================================
+   EXISTING TEAM CARDS
+   ========================================================= */
+
+.team-zigzag-item {
+    position: relative;
+
+    border: 1px solid rgba(145, 175, 225, 0.25);
+
+    border-radius: 24px;
+
+    padding: 16px 22px;
+
+    background: rgba(255, 255, 255, 0.82);
+
+    box-shadow:
+        0 16px 45px rgba(75, 111, 180, 0.10);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.team-zigzag-item:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 22px 55px rgba(75, 111, 180, 0.16);
+}
+
+
+/* =========================================================
+   TEAM IMAGES
+   ========================================================= */
+
+.team-zigzag-img {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Colored accent behind image */
+
+.team-zigzag-img::before {
+    content: "";
+
+    position: absolute;
+
+    inset:
+        9px
+        -10px
+        -10px
+        10px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(124, 58, 237, 0.85),
+            rgba(37, 99, 235, 0.50)
+        );
+
+    z-index: -1;
+}
+
+
+/* Image itself */
+
+.team-zigzag-img img {
+    position: relative;
+
+    border:
+        2px solid rgba(255, 255, 255, 0.95);
+
+    box-shadow:
+        0 10px 30px rgba(48, 83, 145, 0.18) !important;
+}
+
+
+/* Different image accents */
+
+.team-zigzag-item:nth-of-type(2)
+.team-zigzag-img::before {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37, 99, 235, 0.72),
+            rgba(99, 102, 241, 0.42)
+        );
+}
+
+
+.team-zigzag-item:nth-of-type(3)
+.team-zigzag-img::before {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(124, 58, 237, 0.90),
+            rgba(167, 139, 250, 0.50)
+        );
+}
+
+
+.team-zigzag-item:nth-of-type(4)
+.team-zigzag-img::before {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(20, 184, 166, 0.75),
+            rgba(45, 212, 191, 0.40)
+        );
+}
+
+
+/* =========================================================
+   ROLE BADGES
+   ========================================================= */
+
+.team-role-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 14px;
+
+    border-radius: 50px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #4f46b8;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(124, 58, 237, 0.12),
+            rgba(96, 165, 250, 0.10)
+        );
+
+    border:
+        1px solid rgba(124, 58, 237, 0.08);
+}
+
+
+.team-role-badge i {
+    font-size: 14px;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   SKILL PILLS
+   ========================================================= */
+
+.team-skill-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 14px;
+}
+
+
+.team-skill-list span {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 7px 14px;
+
+    border-radius: 50px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    color: #3772b9;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f0f7ff,
+            #e7f1fd
+        );
+
+    border:
+        1px solid rgba(93, 148, 220, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.team-skill-list span:hover {
+    transform: translateY(-2px);
+
+    background:
+        linear-gradient(
+            180deg,
+            #e8f3ff,
+            #dcecff
+        );
+}
+
+
+/* =========================================================
+   ARROW BUTTON
+   ========================================================= */
+
+.team-card-arrow {
+    position: absolute;
+
+    right: 18px;
+    bottom: 18px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #2374c7;
+
+    background: rgba(238, 247, 255, 0.95);
+
+    box-shadow:
+        0 8px 20px rgba(60, 110, 180, 0.10);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.team-card-arrow:hover {
+    transform: translateX(4px);
+
+    background: #ffffff;
+}
+
+
+/* Reverse cards */
+
+.team-zigzag-item.reverse .team-card-arrow {
+    left: 18px;
+    right: auto;
+}
+
+
+.team-zigzag-item.reverse .team-card-arrow:hover {
+    transform: translateX(-4px);
+}
+
+
+/* =========================================================
+   DECORATIVE DOTS
+   ========================================================= */
+
+.team-dots {
+    position: absolute;
+
+    right: -20px;
+    top: 25px;
+
+    width: 45px;
+    height: 65px;
+
+    opacity: 0.35;
+
+    background-image:
+        radial-gradient(
+            #3b82f6 1.3px,
+            transparent 1.3px
+        );
+
+    background-size: 9px 9px;
+
+    pointer-events: none;
+}
+
+
+.team-zigzag-item.reverse .team-dots {
+    left: -20px;
+    right: auto;
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .team-zigzag-item {
+        padding: 24px 18px;
+    }
+
+
+    .team-zigzag-content {
+        text-align: center !important;
+    }
+
+
+    .team-skill-list {
+        justify-content: center !important;
+    }
+
+
+    /* .team-card-arrow {
+        position: relative;
+
+        left: auto !important;
+        right: auto !important;
+        bottom: auto;
+
+        margin: 15px auto 0;
+    } */
+
+
+    .team-dots {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .team-intro-copy {
+        font-size: 14px;
+
+        padding:
+            0 15px;
+    }
+
+
+    .team-zigzag-item {
+        border-radius: 20px;
+    }
+
+
+    .team-role-badge {
+        font-size: 12px;
+
+        padding:
+            7px 12px;
+    }
+
+
+    .team-skill-list span {
+        font-size: 10px;
+
+        padding:
+            6px 11px;
+    }
 
 }
