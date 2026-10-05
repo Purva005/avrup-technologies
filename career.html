@@ -1,0 +1,3004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Avrup Technologies</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/Company Icon (Without Background).png">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "AVRUP Technologies",
+  "url": "https://avruptechnologies.com",
+  "logo": "https://avruptechnologies.com/assets/assets/company-logo.png",
+  "telephone": "+91-9352699060",
+  "email": "avruptechnologies@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Udaipur",
+    "addressRegion": "Rajasthan",
+    "addressCountry": "IN"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/avrup-technologies",
+    "https://www.instagram.com/avruptechnologies"
+  ]
+}
+</script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/Company Icon (Without Background).png">
+
+    <style>
+        :root {
+            --career-purple: #7c3aed;
+            --career-blue: #2563eb;
+            --career-dark: #111827;
+            --career-muted: #64748b;
+            --career-light: #f7f9ff;
+        }
+
+
+        body {
+            overflow-x: hidden;
+        }
+
+
+        /* =====================================================
+           HERO
+           ===================================================== */
+
+        .career-hero {
+
+            min-height: 720px;
+
+            padding-top: 145px;
+            padding-bottom: 100px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    circle at 10% 20%,
+                    rgba(124,58,237,.10),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 90% 20%,
+                    rgba(37,99,235,.10),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    180deg,
+                    #ffffff 0%,
+                    #f7f9ff 100%
+                );
+
+        }
+
+
+        /* Animated grid */
+
+        .career-grid {
+
+            position: absolute;
+
+            inset: 0;
+
+            opacity: .35;
+
+            background-image:
+
+                linear-gradient(
+                    rgba(124,58,237,.055) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(124,58,237,.055) 1px,
+                    transparent 1px
+                );
+
+            background-size: 55px 55px;
+
+            mask-image:
+                linear-gradient(
+                    to bottom,
+                    black,
+                    transparent 90%
+                );
+
+            animation:
+                gridMove 20s linear infinite;
+
+        }
+
+
+        @keyframes gridMove {
+
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(55px);
+            }
+
+        }
+
+
+        /* Floating blobs */
+
+        .career-orb {
+
+            position: absolute;
+
+            border-radius: 50%;
+
+            filter: blur(2px);
+
+            pointer-events: none;
+
+            animation:
+                careerFloat 7s ease-in-out infinite;
+
+        }
+
+
+        .career-orb-one {
+
+            width: 220px;
+            height: 220px;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(124,58,237,.15),
+                    transparent 70%
+                );
+
+            top: 80px;
+            left: -80px;
+
+        }
+
+
+        .career-orb-two {
+
+            width: 300px;
+            height: 300px;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(37,99,235,.12),
+                    transparent 70%
+                );
+
+            right: -100px;
+            top: 150px;
+
+            animation-delay: -2s;
+
+        }
+
+
+        .career-orb-three {
+
+            width: 140px;
+            height: 140px;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(139,92,246,.15),
+                    transparent 70%
+                );
+
+            bottom: 20px;
+            left: 45%;
+
+            animation-delay: -4s;
+
+        }
+
+
+        @keyframes careerFloat {
+
+            0%,
+            100% {
+                transform: translateY(0) scale(1);
+            }
+
+            50% {
+                transform: translateY(-25px) scale(1.05);
+            }
+
+        }
+
+
+        .career-hero-content {
+
+            position: relative;
+
+            z-index: 3;
+
+        }
+
+
+        .career-mini-badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            padding: 9px 16px;
+
+            border-radius: 50px;
+
+            color: #5b42bb;
+
+            background:
+                rgba(124,58,237,.08);
+
+            border:
+                1px solid rgba(124,58,237,.10);
+
+            font-size: 12px;
+
+            font-weight: 600;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .career-mini-badge i {
+
+            font-size: 13px;
+
+        }
+
+
+        .career-hero-title {
+
+            max-width: 850px;
+
+            margin: 22px auto 0;
+
+            font-size: clamp(
+                28px,
+                7vw,
+                72px
+            );
+
+            line-height: 1.04;
+
+            letter-spacing: -3px;
+
+            font-weight: 400;
+
+            color: var(--career-dark);
+
+        }
+
+
+        .career-hero-title .gradient-text {
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #7c3aed,
+                    #2563eb,
+                    #7c3aed
+                );
+
+            background-size: 200% auto;
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            animation:
+                gradientMove 5s linear infinite;
+
+        }
+
+
+        @keyframes gradientMove {
+
+            to {
+                background-position: 200% center;
+            }
+
+        }
+
+
+        .career-hero-description {
+
+            max-width: 650px;
+
+            margin: 25px auto 0;
+
+            color: #64748b;
+
+            font-size: 17px;
+
+            line-height: 1.8;
+
+        }
+
+
+        .career-hero-buttons {
+
+            margin-top: 35px;
+
+        }
+
+
+        .career-main-btn {
+
+            padding: 14px 27px;
+
+            border-radius: 50px;
+
+            border: none;
+
+            color: white;
+
+            text-decoration: none;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7c3aed,
+                    #2563eb
+                );
+
+            box-shadow:
+                0 12px 30px rgba(
+                    99,
+                    102,
+                    241,
+                    .22
+                );
+
+            transition: .3s ease;
+
+        }
+
+
+        .career-main-btn:hover {
+
+            color: white;
+
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 18px 35px rgba(
+                    99,
+                    102,
+                    241,
+                    .30
+                );
+
+        }
+
+
+        .career-outline-btn {
+
+            padding: 14px 27px;
+
+            border-radius: 50px;
+
+            color: #334155;
+
+            text-decoration: none;
+
+            border:
+                1px solid #dbe3f1;
+
+            background: rgba(
+                255,
+                255,
+                255,
+                .75
+            );
+
+            transition: .3s ease;
+
+        }
+
+
+        .career-outline-btn:hover {
+
+            color: #5b42bb;
+
+            border-color:
+                rgba(124,58,237,.35);
+
+            transform:
+                translateY(-4px);
+
+        }
+
+
+        /* =====================================================
+           FLOATING HERO CARDS
+           ===================================================== */
+
+        .career-floating-area {
+
+            position: relative;
+
+            height: 390px;
+
+            max-width: 900px;
+
+            margin: 75px auto 0;
+
+        }
+
+
+        .career-center-circle {
+
+            position: absolute;
+
+            left: 50%;
+            top: 50%;
+
+            transform:
+                translate(-50%, -50%);
+
+            width: 155px;
+            height: 155px;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7c3aed,
+                    #2563eb
+                );
+
+            box-shadow:
+                0 25px 70px
+                rgba(99,102,241,.25);
+
+            animation:
+                centerPulse 4s ease-in-out infinite;
+
+        }
+
+
+        .career-center-circle i {
+
+            font-size: 54px;
+
+            color: white;
+
+        }
+
+
+        @keyframes centerPulse {
+
+            0%,
+            100% {
+                transform:
+                    translate(-50%, -50%)
+                    scale(1);
+            }
+
+            50% {
+                transform:
+                    translate(-50%, -50%)
+                    scale(1.06);
+            }
+
+        }
+
+
+        .career-float-card {
+
+            position: absolute;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 13px;
+
+            padding: 14px 19px;
+
+            border-radius: 18px;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    .88
+                );
+
+            border:
+                1px solid rgba(
+                    148,
+                    163,
+                    184,
+                    .20
+                );
+
+            box-shadow:
+                0 20px 45px
+                rgba(72,96,145,.12);
+
+            backdrop-filter:
+                blur(14px);
+
+            animation:
+                floatCard 5s ease-in-out infinite;
+
+        }
+
+
+        .career-float-card i {
+
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 12px;
+
+            color: #6d43d7;
+
+            background:
+                rgba(124,58,237,.09);
+
+        }
+
+
+        .career-float-card strong {
+
+            display: block;
+
+            font-size: 13px;
+
+            color: #1e293b;
+
+        }
+
+
+        .career-float-card small {
+
+            display: block;
+
+            margin-top: 2px;
+
+            color: #94a3b8;
+
+            font-size: 10px;
+
+        }
+
+
+        .career-float-one {
+
+            top: 15px;
+            left: 7%;
+
+        }
+
+
+        .career-float-two {
+
+            top: 65px;
+            right: 6%;
+
+            animation-delay: -1.5s;
+
+        }
+
+
+        .career-float-three {
+
+            bottom: 45px;
+            left: 12%;
+
+            animation-delay: -2.5s;
+
+        }
+
+
+        .career-float-four {
+
+            bottom: 20px;
+            right: 13%;
+
+            animation-delay: -3.5s;
+
+        }
+
+
+        @keyframes floatCard {
+
+            0%,
+            100% {
+                transform:
+                    translateY(0);
+            }
+
+            50% {
+                transform:
+                    translateY(-13px);
+            }
+
+        }
+
+
+        /* =====================================================
+           SECTION COMMON
+           ===================================================== */
+
+        .career-section {
+
+            padding:
+                110px 0;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+
+        .career-section-light {
+
+            background:
+                #f7f9ff;
+
+        }
+
+
+        .career-section-title {
+
+            font-size:
+                clamp(
+                    32px,
+                    4vw,
+                    42px
+                );
+
+            line-height: 1.15;
+
+            letter-spacing: -1.5px;
+
+            font-weight: 400;
+
+            color: #111827;
+
+        }
+
+
+        .career-section-description {
+
+            max-width: 650px;
+
+            margin:
+                18px auto 0;
+
+            color: #71809d;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =====================================================
+           WHY JOIN
+           ===================================================== */
+
+        .career-benefit-card {
+
+            position: relative;
+
+            height: 100%;
+
+            padding: 34px 30px;
+
+            border-radius: 25px;
+
+            background: white;
+
+            border:
+                1px solid #e9eef7;
+
+            box-shadow:
+                0 15px 45px
+                rgba(61,91,145,.07);
+
+            overflow: hidden;
+
+            transition:
+                transform .35s ease,
+                box-shadow .35s ease;
+
+        }
+
+
+        .career-benefit-card::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 120px;
+            height: 120px;
+
+            right: -50px;
+            top: -50px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(124,58,237,.07);
+
+            transition: .4s ease;
+
+        }
+
+
+        .career-benefit-card:hover {
+
+            transform:
+                translateY(-10px);
+
+            box-shadow:
+                0 25px 60px
+                rgba(61,91,145,.12);
+
+        }
+
+
+        .career-benefit-card:hover::before {
+
+            transform:
+                scale(2.2);
+
+        }
+
+
+        .career-benefit-icon {
+
+            width: 58px;
+            height: 58px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 17px;
+
+            color: #6d43d7;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(124,58,237,.12),
+                    rgba(37,99,235,.08)
+                );
+
+            font-size: 23px;
+
+            margin-bottom: 24px;
+
+        }
+
+
+        .career-benefit-card h4 {
+
+            font-size: 19px;
+
+            font-weight: 600;
+
+            color: #1e293b;
+
+        }
+
+
+        .career-benefit-card p {
+
+            color: #71809d;
+
+            font-size: 14px;
+
+            line-height: 1.75;
+
+            margin: 0;
+
+        }
+
+
+        /* =====================================================
+           LIFE AT AVRUP
+           ===================================================== */
+
+        .career-life {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ffffff,
+                    #f5f8ff
+                );
+
+        }
+
+
+        .career-life-panel {
+
+            position: relative;
+
+            min-height: 480px;
+
+            border-radius: 35px;
+
+            padding: 60px;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #111827,
+                    #202d4d
+                );
+
+            box-shadow:
+                0 30px 80px
+                rgba(25,45,90,.18);
+
+        }
+
+
+        .career-life-panel::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 400px;
+            height: 400px;
+
+            right: -130px;
+            top: -170px;
+
+            border-radius: 50%;
+
+            border:
+                80px solid
+                rgba(124,58,237,.18);
+
+        }
+
+
+        .career-life-panel::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 280px;
+            height: 280px;
+
+            left: -130px;
+            bottom: -150px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(37,99,235,.13);
+
+            filter: blur(10px);
+
+        }
+
+
+        .career-life-content {
+
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 570px;
+
+        }
+
+
+        .career-life-content .career-mini-badge {
+
+            color: #c4b5fd;
+
+            background:
+                rgba(255,255,255,.07);
+
+            border-color:
+                rgba(255,255,255,.10);
+
+        }
+
+
+        .career-life-title {
+
+            margin-top: 22px;
+
+            color: white;
+
+            font-size:
+                clamp(
+                    34px,
+                    4vw,
+                    56px
+                );
+
+            line-height: 1.15;
+
+            font-weight: 600;
+
+            letter-spacing: -1.5px;
+
+        }
+
+
+        .career-life-text {
+
+            color: #aebbd2;
+
+            line-height: 1.8;
+
+            margin-top: 20px;
+
+        }
+
+
+        .career-life-tags {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin-top: 30px;
+
+        }
+
+
+        .career-life-tags span {
+
+            padding:
+                9px 15px;
+
+            border-radius: 50px;
+
+            color: #dbe5ff;
+
+            font-size: 11px;
+
+            border:
+                1px solid
+                rgba(255,255,255,.10);
+
+            background:
+                rgba(255,255,255,.06);
+
+        }
+
+
+        /* =====================================================
+           OPEN POSITIONS
+           ===================================================== */
+
+        .career-jobs-section {
+
+            background: #ffffff;
+
+        }
+
+
+        .career-job-card {
+
+            position: relative;
+
+            padding: 34px;
+
+            border-radius: 27px;
+
+            border:
+                1px solid #e8edf6;
+
+            background: white;
+
+            box-shadow:
+                0 15px 50px
+                rgba(67,92,135,.07);
+
+            transition:
+                transform .35s ease,
+                box-shadow .35s ease,
+                border-color .35s ease;
+
+            overflow: hidden;
+
+        }
+
+
+        .career-job-card::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 170px;
+            height: 170px;
+
+            right: -90px;
+            bottom: -100px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(124,58,237,.07);
+
+            transition: .4s ease;
+
+        }
+
+
+        .career-job-card:hover {
+
+            transform:
+                translateY(-8px);
+
+            border-color:
+                rgba(124,58,237,.20);
+
+            box-shadow:
+                0 25px 65px
+                rgba(67,92,135,.12);
+
+        }
+
+
+        .career-job-card:hover::after {
+
+            transform:
+                scale(1.5);
+
+        }
+
+
+        .career-job-top {
+
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                flex-start;
+
+            gap: 20px;
+
+        }
+
+
+        .career-job-category {
+
+            color: #6d43d7;
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .career-job-icon {
+
+            width: 52px;
+            height: 52px;
+
+            flex-shrink: 0;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 15px;
+
+            color: #6d43d7;
+
+            background:
+                rgba(124,58,237,.08);
+
+            font-size: 20px;
+
+        }
+
+
+        .career-job-card h3 {
+
+            color: #172033;
+
+            font-size: 23px;
+
+            font-weight: 600;
+
+            margin-top: 12px;
+
+        }
+
+
+        .career-job-card p {
+
+            color: #71809d;
+
+            font-size: 14px;
+
+            line-height: 1.75;
+
+            max-width: 620px;
+
+        }
+
+
+        .career-job-meta {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 9px;
+
+            margin-top: 20px;
+
+        }
+
+
+        .career-job-meta span {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+            padding:
+                7px 12px;
+
+            border-radius: 50px;
+
+            color: #64748b;
+
+            background: #f5f7fb;
+
+            font-size: 11px;
+
+            font-weight: 500;
+
+        }
+
+
+        .career-job-action {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            margin-top: 25px;
+
+            color: #5b42bb;
+
+            text-decoration: none;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            transition: .25s ease;
+
+        }
+
+
+        .career-job-action:hover {
+
+            color: #2563eb;
+
+            gap: 13px;
+
+        }
+
+
+        /* =====================================================
+           HIRING PROCESS
+           ===================================================== */
+
+        .career-process {
+
+            background:
+                #f7f9ff;
+
+        }
+
+
+        .career-process-line {
+
+            position: absolute;
+
+            left: 12.5%;
+            right: 12.5%;
+
+            top: 64px;
+
+            height: 1px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    #cdd7ea,
+                    transparent
+                );
+
+        }
+
+
+        .career-process-item {
+
+            position: relative;
+
+            z-index: 2;
+
+            text-align: center;
+
+        }
+
+
+        .career-process-number {
+
+            width: 64px;
+            height: 64px;
+
+            margin: 0 auto 22px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7c3aed,
+                    #2563eb
+                );
+
+            box-shadow:
+                0 10px 30px
+                rgba(99,102,241,.20);
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+        }
+
+
+        .career-process-item h5 {
+
+            color: #1e293b;
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+        }
+
+
+        .career-process-item p {
+
+            max-width: 210px;
+
+            margin:
+                8px auto 0;
+
+            color: #71809d;
+
+            font-size: 12px;
+
+            line-height: 1.7;
+
+        }
+
+
+        /* =====================================================
+           CTA
+           ===================================================== */
+
+        .career-final-cta {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding:
+                85px 30px;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f8f7ff,
+                    #eef5ff
+                );
+
+        }
+
+
+        .career-final-cta::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            left: -150px;
+            top: -180px;
+
+            background:
+                rgba(124,58,237,.08);
+
+        }
+
+
+        .career-final-cta::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            right: -150px;
+            bottom: -190px;
+
+            background:
+                rgba(37,99,235,.08);
+
+        }
+
+
+        .career-final-content {
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+
+        .career-final-content h2 {
+
+            font-size:
+                clamp(
+                    32px,
+                    4vw,
+                    52px
+                );
+
+            font-weight: 600;
+
+            color: #111827;
+
+        }
+
+
+        .career-final-content p {
+
+            max-width: 600px;
+
+            margin:
+                18px auto 28px;
+
+            color: #71809d;
+
+            line-height: 1.8;
+
+        }
+
+
+        .career-email {
+
+            color: #5b42bb;
+
+            font-weight: 600;
+
+            text-decoration: none;
+
+        }
+
+
+        .career-email:hover {
+
+            color: #2563eb;
+
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+           ===================================================== */
+
+        @media (max-width: 991px) {
+
+            .career-hero {
+
+                min-height: auto;
+
+            }
+
+
+            .career-floating-area {
+
+                height: 350px;
+
+            }
+
+
+            .career-life-panel {
+
+                padding: 45px 35px;
+
+            }
+
+
+            .career-process-line {
+
+                display: none;
+
+            }
+
+        }
+
+
+        @media (max-width: 767px) {
+
+            .career-hero {
+
+                padding-top: 125px;
+
+                padding-bottom: 50px;
+
+            }
+
+
+            .career-hero-title {
+
+                font-size: 44px;
+
+                letter-spacing: -1.8px;
+
+            }
+
+
+            .career-hero-description {
+
+                font-size: 15px;
+
+            }
+
+
+            .career-floating-area {
+
+                height: 330px;
+
+                margin-top: 55px;
+
+            }
+
+
+            .career-center-circle {
+
+                width: 120px;
+                height: 120px;
+
+            }
+
+
+            .career-center-circle i {
+
+                font-size: 40px;
+
+            }
+
+
+            .career-float-card {
+
+                padding:
+                    10px 12px;
+
+            }
+
+
+            .career-float-card i {
+
+                width: 34px;
+                height: 34px;
+
+                font-size: 13px;
+
+            }
+
+
+            .career-float-card strong {
+
+                font-size: 10px;
+
+            }
+
+
+            .career-float-card small {
+
+                font-size: 8px;
+
+            }
+
+
+            .career-float-one {
+
+                left: 0;
+
+            }
+
+
+            .career-float-two {
+
+                right: 0;
+
+            }
+
+
+            .career-float-three {
+
+                left: 0;
+
+            }
+
+
+            .career-float-four {
+
+                right: 0;
+
+            }
+
+
+            .career-section {
+
+                padding:
+                    75px 0;
+
+            }
+
+
+            .career-life-panel {
+
+                padding:
+                    40px 25px;
+
+                border-radius: 25px;
+
+            }
+
+
+            .career-job-card {
+
+                padding: 26px;
+
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .career-hero-title {
+
+                font-size: 37px;
+
+            }
+
+
+            .career-hero-buttons {
+
+                flex-direction: column;
+
+            }
+
+
+            .career-main-btn,
+            .career-outline-btn {
+
+                width: 100%;
+
+                text-align: center;
+
+            }
+
+
+            .career-floating-area {
+
+                height: 280px;
+
+            }
+
+
+            .career-float-card {
+
+                transform:
+                    scale(.88);
+
+            }
+
+
+            .career-process-item {
+
+                margin-bottom: 35px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<div id="scrollBar"></div>
+<div class="particles"></div>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top transition-all">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+            <img src="assets/flogo.png" alt="Avrup Technologies Logo" class="img-fluid" style="height: 50px; width: auto;">
+            <span></span>
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 alignment-center">
+                <li class="nav-item"><a href="https://avruptechnologies.com" class="nav-link py-2 py-lg-0">Home</a></li>
+                <li class="nav-item"><a href="about-us.html" class="nav-link py-2 py-lg-0">About Us</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link py-2 py-lg-0">Services</a></li>
+                <li class="nav-item"><a href="our-process.html" class="nav-link py-2 py-lg-0">Our Process</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link py-2 py-lg-0">Portfolio</a></li>
+                <li class="nav-item"><a href="our-team.html" class="nav-link py-2 py-lg-0">Our Team</a></li>
+                <li class="nav-item"><a href="career.html" class="nav-link py-2 py-lg-0">Career</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link py-2 py-lg-0">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="career-hero">
+
+    <div class="career-grid"></div>
+
+    <div class="career-orb career-orb-one"></div>
+    <div class="career-orb career-orb-two"></div>
+    <div class="career-orb career-orb-three"></div>
+
+
+    <div class="container position-relative">
+
+        <div
+            class="career-hero-content text-center"
+            data-aos="fade-up"
+        >
+
+            <span class="career-mini-badge">
+
+                <i class="bi bi-stars"></i>
+
+                JOIN AVRUP TECHNOLOGIES
+
+            </span>
+
+
+            <h1 class="career-hero-title">
+
+                Build.
+                <span class="gradient-text">
+                    Create.
+                </span>
+                Grow.
+
+                <br>
+
+                <span class="gradient-text">
+                    Together.
+                </span>
+
+            </h1>
+
+
+            <p class="career-hero-description">
+
+                We're building a team of curious minds, creative
+                thinkers, and technology enthusiasts who want to
+                create meaningful digital experiences and grow
+                alongside an ambitious technology company.
+
+            </p>
+
+
+            <div
+                class="career-hero-buttons d-flex gap-3 justify-content-center"
+            >
+
+                <a
+                    href="#open-positions"
+                    class="career-main-btn"
+                >
+                    Explore Open Roles
+                    <i class="bi bi-arrow-down ms-2"></i>
+                </a>
+
+
+                <a
+                    href="#life-at-avrup"
+                    class="career-outline-btn"
+                >
+                    Life at Avrup
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FLOATING CARDS -->
+
+        <!-- <div class="career-floating-area">
+
+
+            <div
+                class="career-center-circle"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+            >
+
+                <i class="bi bi-people-fill"></i>
+
+            </div>
+
+
+            <div
+                class="career-float-card career-float-one"
+                data-aos="fade-right"
+                data-aos-delay="500"
+            >
+
+                <i class="bi bi-lightbulb-fill"></i>
+
+                <div>
+
+                    <strong>
+                        Creative Freedom
+                    </strong>
+
+                    <small>
+                        Bring your ideas to life
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="career-float-card career-float-two"
+                data-aos="fade-left"
+                data-aos-delay="600"
+            >
+
+                <i class="bi bi-rocket-takeoff-fill"></i>
+
+                <div>
+
+                    <strong>
+                        Real Impact
+                    </strong>
+
+                    <small>
+                        Build meaningful products
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="career-float-card career-float-three"
+                data-aos="fade-right"
+                data-aos-delay="700"
+            >
+
+                <i class="bi bi-graph-up-arrow"></i>
+
+                <div>
+
+                    <strong>
+                        Grow With Us
+                    </strong>
+
+                    <small>
+                        Learn and evolve
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="career-float-card career-float-four"
+                data-aos="fade-left"
+                data-aos-delay="800"
+            >
+
+                <i class="bi bi-stars"></i>
+
+                <div>
+
+                    <strong>
+                        Collaborative Culture
+                    </strong>
+
+                    <small>
+                        Ideas grow together
+                    </small>
+
+                </div> -->
+
+            <!-- </div> -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     WHY JOIN
+     ========================================================= -->
+
+<section class="career-section career-section-light">
+
+    <div class="container">
+
+        <div
+            class="text-center mb-5"
+            data-aos="fade-up"
+        >
+
+            <span class="career-mini-badge">
+
+                <i class="bi bi-heart-fill"></i>
+
+                WHY AVRUP
+
+            </span>
+
+
+            <h2 class="career-section-title mt-3">
+
+                More Than Just
+                <span class="gradient-text">
+                    A Job
+                </span>
+
+            </h2>
+
+
+            <p class="career-section-description">
+
+                We believe great work happens when people have
+                the freedom to think, learn, experiment and
+                build together.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- CARD 1 -->
+
+            <div
+                class="col-lg-3 col-md-6"
+                data-aos="fade-up"
+            >
+
+                <div class="career-benefit-card">
+
+                    <div class="career-benefit-icon">
+
+                        <i class="bi bi-lightbulb-fill"></i>
+
+                    </div>
+
+
+                    <h4>
+                        Creative Freedom
+                    </h4>
+
+
+                    <p>
+                        Bring your ideas, experiment with new
+                        approaches and contribute beyond your
+                        defined role.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 2 -->
+
+            <div
+                class="col-lg-3 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="100"
+            >
+
+                <div class="career-benefit-card">
+
+                    <div class="career-benefit-icon">
+
+                        <i class="bi bi-rocket-takeoff-fill"></i>
+
+                    </div>
+
+
+                    <h4>
+                        Real-World Impact
+                    </h4>
+
+
+                    <p>
+                        Work on websites, products, brands and
+                        digital solutions that are actually used
+                        by businesses.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 3 -->
+
+            <div
+                class="col-lg-3 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="200"
+            >
+
+                <div class="career-benefit-card">
+
+                    <div class="career-benefit-icon">
+
+                        <i class="bi bi-bar-chart-fill"></i>
+
+                    </div>
+
+
+                    <h4>
+                        Continuous Growth
+                    </h4>
+
+
+                    <p>
+                        Learn new technologies, improve your
+                        skills and take on opportunities that
+                        challenge you.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 4 -->
+
+            <div
+                class="col-lg-3 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="300"
+            >
+
+                <div class="career-benefit-card">
+
+                    <div class="career-benefit-icon">
+
+                        <i class="bi bi-people-fill"></i>
+
+                    </div>
+
+
+                    <h4>
+                        Collaborative Culture
+                    </h4>
+
+
+                    <p>
+                        Work alongside designers, developers,
+                        marketers and creative professionals.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     LIFE AT AVRUP
+     ========================================================= -->
+
+<section
+    id="life-at-avrup"
+    class="career-section career-life"
+>
+
+    <div class="container">
+
+        <div
+            class="career-life-panel"
+            data-aos="zoom-in"
+        >
+
+            <div class="career-life-content">
+
+                <span class="career-mini-badge">
+
+                    <i class="bi bi-stars"></i>
+
+                    LIFE AT AVRUP
+
+                </span>
+
+
+                <h2 class="career-life-title">
+
+                    Where ideas
+                    become
+                    <span class="gradient-text">
+                        impact.
+                    </span>
+
+                </h2>
+
+
+                <p class="career-life-text">
+
+                    At Avrup Technologies, we bring design,
+                    technology, strategy and creativity together.
+                    Every project is an opportunity to learn
+                    something new, solve a real problem and
+                    create something we're proud of.
+
+                </p>
+
+
+                <div class="career-life-tags">
+
+                    <span>
+                        Creative Thinking
+                    </span>
+
+                    <span>
+                        Modern Technology
+                    </span>
+
+                    <span>
+                        Team Collaboration
+                    </span>
+
+                    <span>
+                        Continuous Learning
+                    </span>
+
+                    <span>
+                        Real Projects
+                    </span>
+
+                    <span>
+                        Growth Mindset
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     OPEN POSITIONS
+     ========================================================= -->
+
+<section
+    id="open-positions"
+    class="career-section career-jobs-section"
+>
+
+    <div class="container">
+
+        <div
+            class="text-center mb-5"
+            data-aos="fade-up"
+        >
+
+            <span class="career-mini-badge">
+
+                <i class="bi bi-briefcase-fill"></i>
+
+                OPEN POSITIONS
+
+            </span>
+
+
+            <h2 class="career-section-title mt-3">
+
+                Find Your
+                <span class="gradient-text">
+                    Next Opportunity
+                </span>
+
+            </h2>
+
+
+            <p class="career-section-description">
+
+                Explore current opportunities and become part
+                of a growing team building creative and
+                technology-driven solutions.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4 justify-content-center">
+
+
+            <!-- =================================================
+                 SALES & MARKETING EXECUTIVE
+                 ================================================= -->
+
+            <div
+                class="col-lg-6"
+                data-aos="fade-up"
+            >
+
+                <div class="career-job-card">
+
+                    <div class="career-job-top">
+
+                        <div>
+
+                            <span class="career-job-category">
+                                SALES & BUSINESS
+                            </span>
+
+                            <h3>
+                                Sales & Marketing Executive
+                            </h3>
+
+                        </div>
+
+
+                        <div class="career-job-icon">
+
+                            <i class="bi bi-megaphone-fill"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+
+                        Help businesses discover the right
+                        digital solutions while building
+                        meaningful client relationships and
+                        contributing to business growth.
+
+                    </p>
+
+
+                    <div class="career-job-meta">
+
+                        <span>
+                            <i class="bi bi-briefcase"></i>
+                            Full-Time
+                        </span>
+
+                        <span>
+                            <i class="bi bi-geo-alt"></i>
+                            Udaipur / Remote
+                        </span>
+
+                        <span>
+                            <i class="bi bi-people"></i>
+                            Experienced
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="#apply"
+                        class="career-job-action"
+                    >
+
+                        Apply Now
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SALES & MARKETING INTERN
+                 ================================================= -->
+
+            <div
+                class="col-lg-6"
+                data-aos="fade-up"
+                data-aos-delay="150"
+            >
+
+                <div class="career-job-card">
+
+                    <div class="career-job-top">
+
+                        <div>
+
+                            <span class="career-job-category">
+                                SALES & BUSINESS
+                            </span>
+
+                            <h3>
+                                Sales & Marketing Intern
+                            </h3>
+
+                        </div>
+
+
+                        <div class="career-job-icon">
+
+                            <i class="bi bi-graph-up-arrow"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+
+                        A practical opportunity for freshers to
+                        learn sales, digital marketing, client
+                        communication and business development
+                        while working on real projects.
+
+                    </p>
+
+
+                    <div class="career-job-meta">
+
+                        <span>
+                            <i class="bi bi-mortarboard"></i>
+                            Internship
+                        </span>
+
+                        <span>
+                            <i class="bi bi-geo-alt"></i>
+                            Remote
+                        </span>
+
+                        <span>
+                            <i class="bi bi-stars"></i>
+                            Freshers Welcome
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="#apply"
+                        class="career-job-action"
+                    >
+
+                        Apply Now
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     HIRING PROCESS
+     ========================================================= -->
+
+<section class="career-section career-process">
+
+    <div class="container">
+
+        <div
+            class="text-center mb-5"
+            data-aos="fade-up"
+        >
+
+            <span class="career-mini-badge">
+
+                <i class="bi bi-signpost-2-fill"></i>
+
+                OUR PROCESS
+
+            </span>
+
+
+            <h2 class="career-section-title mt-3">
+
+                Simple.
+                <span class="gradient-text">
+                    Transparent.
+                </span>
+                Human.
+
+            </h2>
+
+        </div>
+
+
+        <div class="position-relative">
+
+            <div class="career-process-line"></div>
+
+
+            <div class="row g-4">
+
+
+                <!-- 01 -->
+
+                <div
+                    class="col-lg-3 col-md-6"
+                    data-aos="fade-up"
+                >
+
+                    <div class="career-process-item">
+
+                        <div class="career-process-number">
+                            01
+                        </div>
+
+                        <h5>
+                            Apply
+                        </h5>
+
+                        <p>
+                            Share your profile and tell us
+                            what you can bring to the team.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 02 -->
+
+                <div
+                    class="col-lg-3 col-md-6"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
+
+                    <div class="career-process-item">
+
+                        <div class="career-process-number">
+                            02
+                        </div>
+
+                        <h5>
+                            Shortlisting
+                        </h5>
+
+                        <p>
+                            We review your profile and
+                            understand where you could fit.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 03 -->
+
+                <div
+                    class="col-lg-3 col-md-6"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                >
+
+                    <div class="career-process-item">
+
+                        <div class="career-process-number">
+                            03
+                        </div>
+
+                        <h5>
+                            Interview
+                        </h5>
+
+                        <p>
+                            A focused conversation about
+                            your skills, experience and goals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 04 -->
+
+                <div
+                    class="col-lg-3 col-md-6"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                >
+
+                    <div class="career-process-item">
+
+                        <div class="career-process-number">
+                            04
+                        </div>
+
+                        <h5>
+                            Join Us
+                        </h5>
+
+                        <p>
+                            Welcome to the team and let's
+                            start building something great.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FINAL CTA
+     ========================================================= -->
+
+<section
+    id="apply"
+    class="career-final-cta"
+>
+
+    <div
+        class="career-final-content"
+        data-aos="fade-up"
+    >
+
+        <span class="career-mini-badge">
+
+            <i class="bi bi-send-fill"></i>
+
+            DON'T SEE YOUR ROLE?
+
+        </span>
+
+
+        <h2 class="mt-4">
+
+            Your next opportunity
+            might be
+            <span class="gradient-text">
+                with us.
+            </span>
+
+        </h2>
+
+
+        <p>
+
+            We're always interested in meeting talented
+            people who are passionate about design,
+            technology, marketing and building meaningful
+            digital experiences.
+
+        </p>
+
+
+        <p>
+
+            Send your profile to
+
+            <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=career.avruptechnologies@gmail.com&su=Job%20Application%20-%20Avrup%20Technologies"
+                target="_blank" class="career-email"
+            >
+                career.avruptechnologies@gmail.com
+            </a>
+
+        </p>
+
+
+        <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=career.avruptechnologies@gmail.com&su=Job%20Application%20-%20Avrup%20Technologies"
+            target="_blank" class="career-main-btn d-inline-flex align-items-center"
+        >
+
+            Apply Now
+
+            <i class="bi bi-arrow-up-right ms-2"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+<footer class="neo-footer position-relative overflow-hidden">
+
+    <!-- BACKGROUND -->
+
+    <div class="neo-footer-blur blur-left"></div>
+    <div class="neo-footer-blur blur-right"></div>
+
+    
+
+        <!-- TOP CTA -->
+
+    <div class="container position-relative z-2">
+
+
+        <!-- MAIN GRID -->
+
+        <div class="footer-main-grid">
+
+            <!-- BRAND -->
+
+            <div class="footer-brand-column">
+
+                <div class="footer-brand-logo">
+
+                    <img src="assets/fwlogo.png" alt="Avrup Technologies" class="img-fluid footer-logo"></div>
+
+                <p class="footer-brand-text">
+                    Avrup Technologies builds scalable digital systems,
+                    premium brand experiences, AI-powered solutions,
+                    and modern business platforms for startups and enterprises.
+                </p>
+
+                <!-- SOCIAL -->
+
+                
+
+            </div>
+
+            <!-- LINKS -->
+
+            <div class="footer-links-column">
+
+                <h5>
+                    Navigation
+                </h5>
+
+                <ul>
+
+                    <li><a href="https://avruptechnologies.com">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- SERVICES -->
+
+            <div class="footer-links-column">
+
+                <h5>
+                    Services
+                </h5>
+
+                <ul>
+
+                    <li><a href="services.html">Web Development</a></li>
+                    <li><a href="services.html">App Development</a></li>
+                    <li><a href="services.html">Branding</a></li>
+                    <li><a href="services.html">AI Solutions</a></li>
+                    <li><a href="services.html">Digital Marketing</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- CONTACT -->
+
+            <div class="footer-contact-column">
+
+                <h5>
+                    Contact
+                </h5>
+
+                <div class="footer-contact-list">
+
+                    <div class="footer-contact-row">
+
+                        <div class="footer-contact-icon">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+
+                        <div>
+
+                            <small>Email</small>
+
+                            <a href="mailto:avruptechnologies@gmail.com" style="text-decoration:none; color:white;">
+                                avruptechnologies@gmail.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer-contact-row">
+
+                        <div class="footer-contact-icon">
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+
+                        <div>
+
+                            <small>WhatsApp</small>
+
+                            <a href="https://wa.me/919352699060" target="_blank" style="text-decoration:none; color:white;">
+                                +91-9352699060
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer-contact-row">
+
+                        <div class="footer-contact-icon">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+
+                        <div>
+
+                            <small>Call</small>
+
+                            <a href="tel:+91-9461743301" style="text-decoration:none; color:white;">
+                                +91-9461743301
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BOTTOM -->
+
+        <div class="footer-bottom-bar">
+
+            
+            <div class="footer-social-row">
+
+                    <a href="https://www.instagram.com/avruptechnologies/">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/avrup-technologies/">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=61589559846465">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://x.com/Avrup_Tech">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                </div>
+
+                <a href="https://avruptechnologies.com" style="text-decoration:none; color:white;">
+                © 2026 Avrup Technologies. All Rights Reserved.
+                </a><br>
+                
+
+             <div class="footer-bottom-links">
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<button onclick="topFunction()" id="topBtn" class="position-fixed border-0 outline-none rounded-circle text-white d-none align-items-center justify-content-center transition-all shadow" style="bottom:158px; right:30px; z-index:9999; width:55px; height:55px;">
+    <i class="bi bi-arrow-up-circle-fill fs-3"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+<script>
+    window.addEventListener('scroll',()=>{
+
+    document.querySelectorAll('section').forEach(section=>{
+
+        const speed = section.getAttribute('data-speed');
+
+        if(speed){
+
+            const yPos = -(window.scrollY * speed / 10);
+
+            section.style.backgroundPosition = `center ${yPos}px`;
+        }
+    });
+});
+
+</script>
+
+<script>
+
+    window.addEventListener('scroll',()=>{
+
+    const scrollTop = document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    const progress = (scrollTop / height) * 100;
+
+    document.getElementById('scrollBar').style.width = progress + '%';
+});
+
+</script>
+
+<script>
+const lenis = new Lenis({
+    duration: 1.2,
+    smoothWheel: true
+})
+
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+</script>
+
+<script>
+    // Visibility state handler logic for standard Scroll-To-Top dynamic target elements
+    window.onscroll = function () {
+        const btn = document.getElementById("topBtn");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            btn.classList.remove("d-none");
+            btn.classList.add("d-flex");
+        } else {
+            btn.classList.remove("d-flex");
+            btn.classList.add("d-none");
+        }
+    };
+
+    function topFunction() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    // Initialize Animate On Scroll (AOS) Architecture Engines
+    AOS.init({
+        duration: 1200,
+        once: true,
+        offset: 100,
+        easing: 'ease-in-out'
+    });
+
+    // Control dynamic shadow layout effects on layout header navigation bands during scroll operations
+    window.addEventListener('scroll', function(){
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('shadow-lg', 'bg-white');
+        } else {
+            navbar.classList.remove('shadow-lg', 'bg-white');
+        }
+    });
+
+    // Unified dynamic client request communication transmitter engine (formsubmit.co AJAX integration)
+    const form = document.getElementById("contactForm");
+    const popup = document.getElementById("successPopup");
+
+    form.addEventListener("submit", async function(e){
+        e.preventDefault();
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: "POST",
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                popup.classList.add("active");
+                form.reset();
+                setTimeout(() => {
+                    popup.classList.remove("active");
+                }, 3500);
+            } else {
+                alert("Submission pipeline validation failure. Please test communication manually.");
+            }
+        } catch (error) {
+            alert("Network routing connectivity error context detected.");
+        }
+    });
+</script>
+
+<script>
+    // Auto-close Bootstrap 5 mobile navigation menu overlay when an anchor link is clicked
+const navLinks = document.querySelectorAll('.nav-link');
+const menuToggle = document.getElementById('navMenu');
+const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
+
+navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        // Only trigger collapse if the mobile hamburger toggler is currently visible
+        if (window.getComputedStyle(document.querySelector('.navbar-toggler')).display !== 'none') {
+            bsCollapse.hide();
+        }
+    });
+});
+</script>
+
+</body>
+</html>
